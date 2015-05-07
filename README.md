@@ -38,3 +38,15 @@ Compile:
 
     . build/envsetup.sh
     brunch falcon
+
+### Nokia X2 aka Ara:
+
+    curl -L -o .repo/local_manifests/manifest_nokia_ara.xml -O -L https://raw.githubusercontent.com/zombah/android_local_manifest/cm-11.0-wip/manifest_nokia_ara.xml
+    repo sync
+
+Compile:
+
+    source ./build/envsetup.sh
+    brunch ara
+    make otapackage
+
